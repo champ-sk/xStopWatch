@@ -26,9 +26,9 @@ const Stopwatch = () => {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Stopwatch</h1>
-      <h2>
-        {Math.floor(time / 60)}:{(time % 60).toString().padStart(2, "0")}
-      </h2>
+      <p>
+       Time: {Math.floor(time / 60)}:{(time % 60).toString().padStart(2, "0")}
+      </p>
       <button onClick={handleStartStop}>{isRunning ? "Stop" : "Start"}</button>
       <button onClick={handleReset}>Reset</button>
     </div>
